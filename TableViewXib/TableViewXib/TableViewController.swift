@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let cities:[String] = ["Seattle", "Portland", "San Francisco", "New York"]
+    let cities:[String] = ["Seattle", "Portland", "San Francisco", "New York", "Redmond", "Bellvue", "Los Angeles", "Boston", "Washington DC"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
