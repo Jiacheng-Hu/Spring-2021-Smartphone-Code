@@ -24,14 +24,29 @@
                                     <action selector="actionController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nb-6k-dm2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTr-v4-9qd">
+                                <rect key="frame" x="5" y="494" width="404" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="PZa-ci-ueZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="41c-RB-F6p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jvv-1A-zEw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bTr-v4-9qd" secondAttribute="trailing" constant="5" id="h5d-J6-Ueo"/>
+                            <constraint firstItem="bTr-v4-9qd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="lZX-Ab-hY3"/>
                             <constraint firstItem="41c-RB-F6p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="olW-ad-48m"/>
+                            <constraint firstItem="bTr-v4-9qd" firstAttribute="top" secondItem="41c-RB-F6p" secondAttribute="bottom" constant="25" id="rDa-gI-s6e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblText" destination="bTr-v4-9qd" id="0js-vf-bZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
