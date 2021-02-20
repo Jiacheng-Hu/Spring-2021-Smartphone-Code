@@ -1,0 +1,6 @@
+framework module Pods_GetStockValues {
+  umbrella header "Pods-GetStockValues-umbrella.h"
+
+  export *
+  module * { export * }
+}
