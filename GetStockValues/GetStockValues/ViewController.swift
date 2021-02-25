@@ -28,10 +28,14 @@ class ViewController: UIViewController {
         let ok = UIAlertAction(title: "Ok", style: .default) { (alertAction) in
 //            self.lblStockValue.text = self.globalStockTxtField?.text
             guard let stock = self.globalStockTxtField?.text else {return}
-            self.getStockValue(stock)
+            if stock == ""{
+                return
+            }else{
+                self.getStockValue(stock)
+            }
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (alertAction) in
-            
+            return
         }
         
         alert.addTextField { (stockTxtField) in
