@@ -50,6 +50,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             lblLat.text = "Latitude: \(lat)"
             lblLng.text = "Longitude: \(lng)"
             
+            print(lat)
+            print(lng)
+            
         }
     }
     
