@@ -60,13 +60,31 @@ class AddProductCategoryViewController: UIViewController, UIImagePickerControlle
     
     @IBAction func uploadAction(_ sender: UIButton) {
         
-        if txtName.text == "" {
+        let name = txtName.text
+        
+        if name == "" {
             return
         }
         
+        let data = imgView.image?.jpegData(compressionQuality: 1.0)
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+        let categoryRef = storageRef.child("categories/" + name! + ".jpg")
+        categoryRef.putData(data!, metadata: nil) { (metadata, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "error")
+                return
+            }
+            categoryRef.downloadURL { (url, error) in
+                guard let downloadURL = url else {
+                  // Uh-oh, an error occurred!
+                  return
+                }
+                print(downloadURL)
+            }
         
-        
-    }
+        }
     
+    }
     
 }
