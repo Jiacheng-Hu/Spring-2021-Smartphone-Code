@@ -96,11 +96,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-Ox-Hqa">
+                                <rect key="frame" x="120" y="238" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xHN-C3-CQ4"/>
+                                </constraints>
+                                <state key="normal" title="Add Product Categories"/>
+                                <connections>
+                                    <segue destination="YC7-av-HkH" kind="show" id="wIq-NT-wcr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LZk-Yp-l5Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GGF-Ox-Hqa" firstAttribute="leading" secondItem="LZk-Yp-l5Z" secondAttribute="leading" constant="120" id="4tl-vQ-kyH"/>
+                            <constraint firstItem="GGF-Ox-Hqa" firstAttribute="top" secondItem="LZk-Yp-l5Z" secondAttribute="top" constant="150" id="D40-IN-JoW"/>
                             <constraint firstItem="gcL-VS-72u" firstAttribute="centerX" secondItem="kz9-Oi-Dwj" secondAttribute="centerX" id="hIE-FA-SKZ"/>
+                            <constraint firstItem="LZk-Yp-l5Z" firstAttribute="trailing" secondItem="GGF-Ox-Hqa" secondAttribute="trailing" constant="120" id="hn5-rk-DMP"/>
                             <constraint firstItem="gcL-VS-72u" firstAttribute="centerY" secondItem="kz9-Oi-Dwj" secondAttribute="centerY" id="tdm-rf-B0c"/>
                         </constraints>
                     </view>
@@ -115,6 +128,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0s-xQ-hjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2033" y="139"/>
+        </scene>
+        <!--Add Product Category View Controller-->
+        <scene sceneID="pNQ-2a-RFA">
+            <objects>
+                <viewController title="Add Product Category View Controller" id="YC7-av-HkH" customClass="AddProductCategoryViewController" customModule="AdminAddProducts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spy-Fo-iKk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4V-Zg-aWS">
+                                <rect key="frame" x="20" y="138" width="374" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="69e-WS-Y8j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7X-hg-66i">
+                                <rect key="frame" x="160" y="548" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LS1-JC-V7V"/>
+                                </constraints>
+                                <state key="normal" title="Select Image"/>
+                                <connections>
+                                    <action selector="selectImgAction:" destination="YC7-av-HkH" eventType="touchUpInside" id="VKp-yA-snw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-Fs-bZM">
+                                <rect key="frame" x="180" y="698" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="h9z-NB-OMV"/>
+                                </constraints>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadAction:" destination="YC7-av-HkH" eventType="touchUpInside" id="STk-es-2Zg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3mX-IS-TGe">
+                                <rect key="frame" x="60" y="628" width="294" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xlr-ko-Nex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sey-Wu-KxH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b7X-hg-66i" firstAttribute="leading" secondItem="sey-Wu-KxH" secondAttribute="leading" constant="160" id="Ap4-Vz-7PP"/>
+                            <constraint firstItem="aiU-Fs-bZM" firstAttribute="top" secondItem="3mX-IS-TGe" secondAttribute="bottom" constant="30" id="O10-kz-ORa"/>
+                            <constraint firstItem="3mX-IS-TGe" firstAttribute="top" secondItem="b7X-hg-66i" secondAttribute="bottom" constant="50" id="UdF-6E-aon"/>
+                            <constraint firstItem="3mX-IS-TGe" firstAttribute="leading" secondItem="sey-Wu-KxH" secondAttribute="leading" constant="60" id="Vaa-W7-c8v"/>
+                            <constraint firstItem="sey-Wu-KxH" firstAttribute="trailing" secondItem="3mX-IS-TGe" secondAttribute="trailing" constant="60" id="XjG-pV-QJQ"/>
+                            <constraint firstItem="sey-Wu-KxH" firstAttribute="trailing" secondItem="x4V-Zg-aWS" secondAttribute="trailing" constant="20" id="YQz-Gg-UBy"/>
+                            <constraint firstItem="x4V-Zg-aWS" firstAttribute="top" secondItem="sey-Wu-KxH" secondAttribute="top" constant="50" id="bT4-ih-p9p"/>
+                            <constraint firstItem="aiU-Fs-bZM" firstAttribute="leading" secondItem="sey-Wu-KxH" secondAttribute="leading" constant="180" id="cCk-GH-shX"/>
+                            <constraint firstItem="sey-Wu-KxH" firstAttribute="trailing" secondItem="b7X-hg-66i" secondAttribute="trailing" constant="160" id="esA-Pq-bXK"/>
+                            <constraint firstItem="sey-Wu-KxH" firstAttribute="trailing" secondItem="aiU-Fs-bZM" secondAttribute="trailing" constant="180" id="gay-xl-4k7"/>
+                            <constraint firstItem="b7X-hg-66i" firstAttribute="top" secondItem="x4V-Zg-aWS" secondAttribute="bottom" constant="60" id="uuP-UG-cMZ"/>
+                            <constraint firstItem="x4V-Zg-aWS" firstAttribute="leading" secondItem="sey-Wu-KxH" secondAttribute="leading" constant="20" id="xJY-SM-htU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Product Categories" id="aTQ-2a-lbd"/>
+                    <connections>
+                        <outlet property="imgView" destination="x4V-Zg-aWS" id="pXp-0U-lxs"/>
+                        <outlet property="txtName" destination="3mX-IS-TGe" id="d5Y-Jm-And"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLo-4i-T7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3131.884057971015" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="46f-Tg-9w9">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D48CDDA262C327C00FDB7CF /* AddProductCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48CDD9262C327C00FDB7CF /* AddProductCategoryViewController.swift */; };
 		8DCEB9832625D9B60043FA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEB9822625D9B60043FA73 /* AppDelegate.swift */; };
 		8DCEB9852625D9B60043FA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEB9842625D9B60043FA73 /* SceneDelegate.swift */; };
 		8DCEB9872625D9B60043FA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEB9862625D9B60043FA73 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0A837CC6D701E90EA2E14464 /* Pods_AdminAddProducts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdminAddProducts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D72A90DA7DB5B7D85481AE8 /* Pods-AdminAddProducts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdminAddProducts.debug.xcconfig"; path = "Target Support Files/Pods-AdminAddProducts/Pods-AdminAddProducts.debug.xcconfig"; sourceTree = "<group>"; };
+		8D48CDD9262C327C00FDB7CF /* AddProductCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCategoryViewController.swift; sourceTree = "<group>"; };
 		8DCEB97F2625D9B60043FA73 /* AdminAddProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminAddProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCEB9822625D9B60043FA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DCEB9842625D9B60043FA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				8DCEB9902625D9B70043FA73 /* Info.plist */,
 				8DCEB9972625D9CA0043FA73 /* GoogleService-Info.plist */,
 				8DCEB9C12628474F0043FA73 /* DashboardViewController.swift */,
+				8D48CDD9262C327C00FDB7CF /* AddProductCategoryViewController.swift */,
 			);
 			path = AdminAddProducts;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				8DCEB9872625D9B60043FA73 /* ViewController.swift in Sources */,
 				8DCEB9C22628474F0043FA73 /* DashboardViewController.swift in Sources */,
 				8DCEB9832625D9B60043FA73 /* AppDelegate.swift in Sources */,
+				8D48CDDA262C327C00FDB7CF /* AddProductCategoryViewController.swift in Sources */,
 				8DCEB9B826266F550043FA73 /* Utilities.swift in Sources */,
 				8DCEB9BF2627F4FB0043FA73 /* KeychainService.swift in Sources */,
 				8DCEB9852625D9B60043FA73 /* SceneDelegate.swift in Sources */,
